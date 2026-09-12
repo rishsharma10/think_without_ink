@@ -35,6 +35,10 @@
     font-family: var(--font-mono-custom), ui-monospace, SFMono-Regular, Menlo, monospace;
   }
 
+  .font-cursive {
+    font-family: var(--font-cursive), cursive;
+  }
+
   /* Custom Luxury Scrollbar */
   ::-webkit-scrollbar {
     width: 8px;

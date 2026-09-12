@@ -5,6 +5,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import VedicMathLab from "@/components/VedicMathLab";
+import MathLabVideos from "@/components/MathLabVideos";
 import { Sparkles, Calculator, Zap, BookOpen, Trophy, ArrowRight, CheckCircle2, RefreshCw } from "lucide-react";
 import confetti from "canvas-confetti";
 
@@ -204,6 +205,9 @@ export default function VedicMathLabPage() {
 
         {/* The Interactive Speed Lab Component */}
         <VedicMathLab />
+
+        {/* Video Gallery for Math Tricks */}
+        <MathLabVideos />
 
         {/* Mental Math Speed Quiz Game */}
         <section className="py-20 bg-[#060911] border-b border-white/5">

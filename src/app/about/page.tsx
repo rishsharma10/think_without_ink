@@ -120,10 +120,10 @@ export default function AboutPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                   <div className="absolute bottom-4 left-4 right-4">
                     <span className="px-2.5 py-1 rounded text-[10px] font-bold uppercase tracking-wider bg-amber-500 text-slate-950">
-                      Leadership in Education 2026
+                      Leadership in Education
                     </span>
                     <p className="text-sm font-bold text-white mt-1">
-                      Conferred with the Vidyasagar Leadership Award by Shikshak Shakti Council
+                      Conferred with the Vidyasagar Leadership Award by IITVA, presented by the Mayor of Delhi
                     </p>
                   </div>
                 </div>

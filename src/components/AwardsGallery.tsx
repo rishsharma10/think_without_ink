@@ -16,9 +16,9 @@ export default function AwardsGallery() {
   const galleryImages = [
     {
       src: "/images/roopak-vidyasagar-award.jpg",
-      title: "Vidyasagar Leadership Award 2026 Presentation",
-      subtitle: "Presented on Teachers' Day by Shikshak Shakti Council, New Delhi",
-      tag: "Vidyasagar Award 2026",
+      title: "Vidyasagar Leadership Award Presentation",
+      subtitle: "Presented by the Mayor of Delhi & IITVA",
+      tag: "Vidyasagar Award",
     },
     {
       src: "/images/roopak-stage-honour.jpg",
@@ -76,10 +76,10 @@ export default function AwardsGallery() {
     },
     {
       icon: Award,
-      title: "Vidyasagar Leadership Award 2026",
-      category: "Shikshak Shakti Council",
+      title: "Vidyasagar Leadership Award",
+      category: "IITVA (Indian Institute of Vedic Mathematics & Abacus)",
       highlight: true,
-      desc: "Conferred on Teachers' Day for transformative pedagogy and student empowerment.",
+      desc: "Presented by the Mayor of Delhi for transformative pedagogy and student empowerment.",
     },
     {
       icon: Star,
@@ -132,10 +132,10 @@ export default function AwardsGallery() {
     },
     {
       icon: Trophy,
-      title: "B.Ed. & B.Sc. (Physics Honours) from Delhi University",
+      title: "B.Sc. (Hons.) Mathematics and M.Sc. Mathematics",
       category: "Academic Foundation",
       highlight: false,
-      desc: "Rigorous scientific foundation bridging pure physics and speed arithmetic.",
+      desc: "Rigorous mathematical foundation enabling deep expertise in speed arithmetic and logic.",
     },
   ];
 

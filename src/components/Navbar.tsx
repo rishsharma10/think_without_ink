@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Sparkles, Menu, X, ArrowRight, Brain, Award, BookOpen, PlayCircle, Phone, Home, Calculator, Mail } from "lucide-react";
+import { Sparkles, Menu, X, ArrowRight, Brain, Award, BookOpen, PlayCircle, Phone, Home, Calculator, Mail, Users } from "lucide-react";
 
 interface NavbarProps {
   onOpenContact?: () => void;
@@ -29,6 +29,7 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
     { name: "Vedic Math Lab", href: "/vedic-math-lab", icon: Calculator },
     { name: "Awards", href: "/awards", icon: Award },
     { name: "Programs", href: "/programs", icon: Sparkles },
+    { name: "Workshops", href: "/workshops", icon: Users },
     { name: "Media", href: "/media", icon: PlayCircle },
     { name: "Contact", href: "/contact", icon: Mail },
   ];
@@ -44,23 +45,16 @@ export default function Navbar({ onOpenContact }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Brand Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-600 via-amber-500 to-yellow-400 p-[1.5px] shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform duration-300 shrink-0">
-              <div className="w-full h-full bg-[#090e1a] rounded-[10px] flex items-center justify-center">
-                <span className="font-extrabold text-lg text-amber-400 font-serif">∞</span>
-              </div>
+          <Link href="/" className="flex flex-col group shrink-0">
+            <div className="flex items-center gap-2">
+              <span className="text-2xl sm:text-3xl font-cursive text-amber-400 group-hover:text-amber-300 transition-colors">
+                Think Without Ink
+              </span>
+              <span className="inline-block px-1.5 py-0.5 text-[9px] font-semibold uppercase tracking-wider text-amber-300 bg-amber-500/10 border border-amber-500/30 rounded-md hidden sm:inline-block">
+                Vedic Math
+              </span>
             </div>
-            <div>
-              <div className="flex items-center gap-1.5">
-                <span className="text-base sm:text-lg font-bold tracking-tight text-white group-hover:text-amber-300 transition-colors">
-                  Think Without Ink
-                </span>
-                <span className="inline-block px-1.5 py-0.5 text-[9px] font-semibold uppercase tracking-wider text-amber-300 bg-amber-500/10 border border-amber-500/30 rounded-md">
-                  Vedic Math
-                </span>
-              </div>
-              <p className="text-[11px] text-slate-400 font-medium">By Roopak Kumar</p>
-            </div>
+            <p className="text-[11px] text-slate-400 font-medium sm:ml-1">By Roopak Kumar</p>
           </Link>
 
           {/* Desktop Navigation */}

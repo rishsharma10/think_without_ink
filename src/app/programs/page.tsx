@@ -7,9 +7,10 @@ import ProgramsSection from "@/components/ProgramsSection";
 import { Sparkles, School, Users, GraduationCap, ArrowRight, CheckCircle2, ShieldCheck, Clock, Award, BookOpen, Star } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Workshops & Programs | Mr. Roopak Kumar — Think Without Ink",
+  title: "Online VIP Vedic Maths Batch | Think Without Ink",
   description:
-    "Explore Vedic Mathematics workshops for schools, Faculty Development Programs (FDP) for teachers, and student speed math masterclasses.",
+    "Join Roopak Kumar's LIVE VIP Vedic Maths Batch and experience mathematics through interactive online learning.",
+  keywords: "Online Vedic Maths Classes, VIP Vedic Maths Batch, Roopak Kumar Vedic Maths, Think Without Ink, Online Vedic Maths Batch",
 };
 
 export default function ProgramsPage() {
@@ -45,17 +46,21 @@ export default function ProgramsPage() {
         {/* Header */}
         <section className="relative py-16 bg-radial-gradient bg-grid-pattern border-b border-white/5 overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl space-y-6">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-amber-500/10 border border-amber-500/30 text-amber-300">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-500/10 border border-amber-500/30 text-amber-300">
               <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-              <span>Transformational Workshops & Courses</span>
+              <span>LIVE VIP VEDIC MATHS BATCH with ROOPAK SIR</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white font-serif tracking-tight">
-              Programs & <span className="text-gold-gradient">Offerings</span>
+              Learn Vedic Maths. <span className="text-gold-gradient block mt-2">Calculate Faster. Think Smarter.</span>
             </h1>
+            
+            <p className="text-sm font-semibold uppercase tracking-widest text-amber-400 mb-2">
+              Make Maths Easy • Make Maths Fast.
+            </p>
 
-            <p className="text-lg sm:text-xl text-slate-300 leading-relaxed">
-              Equipping schools, universities, educators, and students with practical speed math tools to accelerate learning and banish math anxiety forever.
+            <p className="text-lg sm:text-xl text-slate-300 leading-relaxed max-w-3xl mx-auto">
+              Join Roopak Kumar&apos;s LIVE VIP Vedic Maths Batch and experience mathematics through interactive online learning. The batch focuses on making mathematics easier, faster and more engaging through Vedic Maths techniques, mental calculation strategies and guided practice.
             </p>
           </div>
         </section>
@@ -116,6 +121,81 @@ export default function ProgramsPage() {
                 </div>
               </div>
 
+            </div>
+          </div>
+        </section>
+
+        {/* VIP Batch Showcase Section */}
+        <section className="py-24 bg-[#05070e]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+            
+            {/* Features */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="p-6 rounded-2xl glass-panel border-white/5 space-y-3">
+                <h4 className="text-lg font-bold text-white font-serif flex items-center gap-2">
+                  <Star className="w-5 h-5 text-amber-400" /> LIVE INTERACTIVE CLASSES
+                </h4>
+                <p className="text-sm text-slate-400">Learn directly with Roopak Sir through live online sessions.</p>
+              </div>
+              <div className="p-6 rounded-2xl glass-panel border-white/5 space-y-3">
+                <h4 className="text-lg font-bold text-white font-serif flex items-center gap-2">
+                  <Clock className="w-5 h-5 text-amber-400" /> FASTER CALCULATIONS
+                </h4>
+                <p className="text-sm text-slate-400">Explore Vedic Maths techniques designed to simplify calculations.</p>
+              </div>
+              <div className="p-6 rounded-2xl glass-panel border-white/5 space-y-3">
+                <h4 className="text-lg font-bold text-white font-serif flex items-center gap-2">
+                  <ShieldCheck className="w-5 h-5 text-amber-400" /> MATHEMATICAL CONFIDENCE
+                </h4>
+                <p className="text-sm text-slate-400">Develop a more comfortable and confident approach towards mathematics.</p>
+              </div>
+              <div className="p-6 rounded-2xl glass-panel border-white/5 space-y-3">
+                <h4 className="text-lg font-bold text-white font-serif flex items-center gap-2">
+                  <BookOpen className="w-5 h-5 text-amber-400" /> PRACTICAL LEARNING
+                </h4>
+                <p className="text-sm text-slate-400">Learn through examples, demonstrations and active participation.</p>
+              </div>
+              <div className="p-6 rounded-2xl glass-panel border-white/5 space-y-3 lg:col-span-2">
+                <h4 className="text-lg font-bold text-white font-serif flex items-center gap-2">
+                  <Users className="w-5 h-5 text-amber-400" /> PERSONAL GUIDANCE
+                </h4>
+                <p className="text-sm text-slate-400">Experience an engaging learning environment with direct guidance.</p>
+              </div>
+            </div>
+
+            {/* Gallery Header */}
+            <div className="text-center max-w-3xl mx-auto space-y-3 pt-10 border-t border-white/5">
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-white font-serif">
+                Inside the Online VIP Vedic Maths Batch
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Placeholder for Screenshot 1 */}
+              <div className="relative rounded-3xl overflow-hidden glass-panel-gold border-amber-500/20 aspect-video shadow-2xl flex items-center justify-center bg-slate-900 flex-col">
+                <div className="text-center space-y-2 opacity-50">
+                   <div className="text-xs uppercase tracking-wider font-bold text-slate-300">
+                     Placeholder: Live Vedic Maths Session
+                   </div>
+                   <div className="text-[10px] text-slate-500">(To be replaced with client-supplied screenshot)</div>
+                </div>
+                <div className="absolute bottom-4 left-4 text-white z-10">
+                  <h4 className="text-lg font-bold font-serif">Interactive Online Learning</h4>
+                </div>
+              </div>
+
+              {/* Placeholder for Screenshot 2 */}
+              <div className="relative rounded-3xl overflow-hidden glass-panel-gold border-amber-500/20 aspect-video shadow-2xl flex items-center justify-center bg-slate-900 flex-col">
+                <div className="text-center space-y-2 opacity-50">
+                   <div className="text-xs uppercase tracking-wider font-bold text-slate-300">
+                     Placeholder: Student Interaction
+                   </div>
+                   <div className="text-[10px] text-slate-500">(To be replaced with client-supplied screenshot)</div>
+                </div>
+                <div className="absolute bottom-4 left-4 text-white z-10">
+                  <h4 className="text-lg font-bold font-serif">Learning Through Practice</h4>
+                </div>
+              </div>
             </div>
           </div>
         </section>

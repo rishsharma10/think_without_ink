@@ -24,9 +24,13 @@ export default function ContactPage() {
     e.preventDefault();
     setLoading(true);
 
+    // Construct WhatsApp message
+    const message = `Hello Roopak Sir,%0A%0AI am inquiring about: *${formData.inquiryType}*%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*Email:* ${formData.email}%0A*Organization:* ${formData.organization}%0A%0A*Message:* ${formData.message}`;
+
     setTimeout(() => {
       setLoading(false);
       setSubmitted(true);
+      window.open(`https://wa.me/919625190184?text=${message}`, "_blank");
       confetti({
         particleCount: 120,
         spread: 80,
@@ -94,11 +98,30 @@ export default function ContactPage() {
                     Think Without Ink Headquarters
                   </span>
                   <h2 className="text-3xl font-extrabold text-white font-serif">
-                    Let&apos;s Build a Generation of Fearless Mathematicians
+                    Let's Make Mathematics Easier Together
                   </h2>
                   <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-                    Whether you represent a premier school looking to empower your mathematics faculty, an educator organizing a state conclave, or a student ready to master speed calculation—we are here to support you.
+                    Have a question about Vedic Maths classes, workshops, teacher training or upcoming batches?
+                    <br/><br/>
+                    Connect with Roopak Kumar – Think Without Ink.
                   </p>
+                  
+                  <div className="pt-4 flex flex-col sm:flex-row gap-4">
+                    <a
+                      href="/programs"
+                      className="px-6 py-3 rounded-full bg-gradient-to-r from-amber-500 to-yellow-400 text-slate-950 font-bold text-sm text-center shadow-lg hover:scale-105 transition-all"
+                    >
+                      Join the Next VIP Batch
+                    </a>
+                    <a
+                      href="https://wa.me/919625190184?text=Hello%20Roopak%20Sir%2C%20I%20have%20a%20query%20regarding%20Vedic%20Maths"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-6 py-3 rounded-full bg-slate-800 text-white font-bold text-sm text-center border border-white/10 hover:border-amber-400/50 transition-all"
+                    >
+                      Contact Roopak Sir
+                    </a>
+                  </div>
                 </div>
 
                 <div className="space-y-4">
@@ -113,28 +136,18 @@ export default function ContactPage() {
                   </div>
 
                   <div className="p-4 rounded-2xl glass-panel border-white/5 flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-blue-500/15 border border-blue-400/30 flex items-center justify-center text-blue-300 shrink-0">
-                      <Mail className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400">Official Inquiries</h4>
-                      <p className="text-sm font-semibold text-white">contact@thinkwithoutink.in / roopak.vedicmath@gmail.com</p>
-                    </div>
-                  </div>
-
-                  <div className="p-4 rounded-2xl glass-panel border-white/5 flex items-center gap-4">
                     <div className="w-12 h-12 rounded-xl bg-emerald-500/15 border border-emerald-400/30 flex items-center justify-center text-emerald-300 shrink-0">
                       <MessageSquare className="w-5 h-5" />
                     </div>
                     <div>
                       <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400">Direct WhatsApp</h4>
                       <a
-                        href="https://wa.me/?text=Hello%20Roopak%20Sir%2C%20I%20am%20interested%20in%20Think%20Without%20Ink%20Vedic%20Math%20Workshops"
+                        href="https://wa.me/919625190184?text=Hello%20Roopak%20Sir%2C%20I%20am%20interested%20in%20Think%20Without%20Ink%20Vedic%20Math%20Workshops"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-sm font-bold text-emerald-400 hover:text-emerald-300 underline transition-colors"
                       >
-                        Click to Chat Directly on WhatsApp
+                        +91 96251 90184
                       </a>
                     </div>
                   </div>
@@ -188,7 +201,7 @@ export default function ContactPage() {
                             required
                             value={formData.phone}
                             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                            placeholder="+91 98765 43210"
+                            placeholder="+91 96251 90184"
                             className="w-full px-4 py-3 rounded-xl glass-input text-sm text-white placeholder:text-slate-500"
                           />
                         </div>
@@ -289,7 +302,7 @@ export default function ContactPage() {
                           Submit Another Inquiry
                         </button>
                         <a
-                          href="https://wa.me/?text=Hello%20Roopak%20Sir%2C%20I%20am%20interested%20in%20Think%20Without%20Ink%20Vedic%20Math%20Workshops"
+                          href="https://wa.me/919625190184?text=Hello%20Roopak%20Sir%2C%20I%20am%20interested%20in%20Think%20Without%20Ink%20Vedic%20Math%20Workshops"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold flex items-center gap-2 shadow-lg shadow-emerald-600/20 transition-all"

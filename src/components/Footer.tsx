@@ -23,18 +23,16 @@ export default function Footer({ onOpenContact }: FooterProps) {
           
           {/* Brand & Mission Column */}
           <div className="md:col-span-5 space-y-4">
-            <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-600 via-amber-500 to-yellow-400 p-[1.5px] shadow-lg shadow-amber-500/20">
-                <div className="w-full h-full bg-[#090e1a] rounded-[10px] flex items-center justify-center">
-                  <span className="font-extrabold text-lg text-amber-400 font-serif">∞</span>
-                </div>
-              </div>
-              <div>
-                <span className="text-xl font-bold tracking-tight text-white group-hover:text-amber-300 transition-colors">
+            <Link href="/" className="flex flex-col group shrink-0">
+              <div className="flex items-center gap-2">
+                <span className="text-2xl sm:text-3xl font-cursive text-amber-400 group-hover:text-amber-300 transition-colors">
                   Think Without Ink
                 </span>
-                <p className="text-xs text-amber-300 font-medium">By Roopak Kumar</p>
+                <span className="inline-block px-1.5 py-0.5 text-[9px] font-semibold uppercase tracking-wider text-amber-300 bg-amber-500/10 border border-amber-500/30 rounded-md hidden sm:inline-block">
+                  Vedic Math
+                </span>
               </div>
+              <p className="text-[11px] text-slate-400 font-medium sm:ml-1">By Roopak Kumar</p>
             </Link>
 
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-sm">
@@ -82,6 +80,11 @@ export default function Footer({ onOpenContact }: FooterProps) {
               </li>
               <li>
                 <Link href="/programs" className="hover:text-amber-300 transition-colors">
+                  Online VIP Vedic Maths Batch
+                </Link>
+              </li>
+              <li>
+                <Link href="/workshops" className="hover:text-amber-300 transition-colors">
                   Workshops & Teacher Training
                 </Link>
               </li>
@@ -130,7 +133,7 @@ export default function Footer({ onOpenContact }: FooterProps) {
               </div>
               <div className="flex items-center gap-2">
                 <Award className="w-4 h-4 text-amber-400 shrink-0" />
-                <span>Vidyasagar Leadership Awardee 2026</span>
+                <span>Vidyasagar Leadership Awardee</span>
               </div>
             </div>
 
@@ -167,6 +170,19 @@ export default function Footer({ onOpenContact }: FooterProps) {
                 <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
               </svg>
               <span>YouTube Keynote</span>
+            </a>
+            <a
+              href="https://www.instagram.com/thinkwithout_ink"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-slate-300 hover:text-pink-400 transition-colors"
+            >
+              <svg className="w-4 h-4 text-pink-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+              </svg>
+              <span>Instagram</span>
             </a>
 
             <button

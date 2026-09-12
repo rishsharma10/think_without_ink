@@ -56,7 +56,7 @@ export default function ProgramsSection({ onOpenContact }: ProgramsSectionProps)
       tag: "For Students & Aspirants",
       badge: "High Impact",
       image: "/images/mental-math-mastery.jpg",
-      title: "Think Without Ink: Complete Masterclass",
+      title: "Online VIP Vedic Maths Batch",
       subtitle: "Comprehensive online & offline mentorship for lightning-fast mental arithmetic.",
       description:
         "A structured end-to-end program for competitive aspirants (JEE, CUET, Banking, SSC, NDA) and enthusiastic learners seeking deep mental agility and calculation mastery.",

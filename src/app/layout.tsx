@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Playfair_Display, Space_Grotesk } from "next/font/google";
+import { Plus_Jakarta_Sans, Playfair_Display, Space_Grotesk, Dancing_Script } from "next/font/google";
 import "./globals.css";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -18,6 +18,13 @@ const playfairDisplay = Playfair_Display({
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-mono-custom",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
+
+const dancingScript = Dancing_Script({
+  variable: "--font-cursive",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   display: "swap",
@@ -73,7 +80,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${plusJakartaSans.variable} ${playfairDisplay.variable} ${spaceGrotesk.variable} scroll-smooth`}
+      className={`${plusJakartaSans.variable} ${playfairDisplay.variable} ${spaceGrotesk.variable} ${dancingScript.variable} scroll-smooth`}
     >
       <body className="font-sans antialiased min-h-screen bg-[#05070e] text-slate-100 selection:bg-amber-500/30 selection:text-amber-200">
         {children}

@@ -8,7 +8,7 @@ import { Sparkles, Trophy, Award, Star, ShieldCheck, ArrowRight, CheckCircle2 } 
 export const metadata: Metadata = {
   title: "Awards & Recognition | Mr. Roopak Kumar — Vedic Mathematics Educator",
   description:
-    "Explore the national and international honors received by Mr. Roopak Kumar: Vidyasagar Leadership Award 2026, CENTA National Ranker, Teacher Appreciation Award, and more.",
+    "Explore the national and international honors received by Mr. Roopak Kumar: Vidyasagar Leadership Award, CENTA National Ranker, Teacher Appreciation Award, and more.",
 };
 
 export default function AwardsPage() {

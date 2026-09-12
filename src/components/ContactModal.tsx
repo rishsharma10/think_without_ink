@@ -29,10 +29,13 @@ export default function ContactModal({ isOpen, onClose, defaultProgram }: Contac
     e.preventDefault();
     setLoading(true);
 
-    // Simulate instant seamless submission
+    // Construct WhatsApp message
+    const message = `Hello Roopak Sir,%0A%0AI am inquiring about: *${formData.inquiryType}*%0A%0A*Name:* ${formData.name}%0A*Phone:* ${formData.phone}%0A*Email:* ${formData.email}%0A*Organization:* ${formData.organization}%0A%0A*Message:* ${formData.message}`;
+
     setTimeout(() => {
       setLoading(false);
       setSubmitted(true);
+      window.open(`https://wa.me/919625190184?text=${message}`, "_blank");
       confetti({
         particleCount: 100,
         spread: 80,
@@ -101,7 +104,7 @@ export default function ContactModal({ isOpen, onClose, defaultProgram }: Contac
                     required
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    placeholder="+91 98765 43210"
+                    placeholder="+91 96251 90184"
                     className="w-full px-3.5 py-2.5 rounded-xl glass-input text-sm text-white placeholder:text-slate-500"
                   />
                 </div>
@@ -208,7 +211,7 @@ export default function ContactModal({ isOpen, onClose, defaultProgram }: Contac
                 </button>
 
                 <a
-                  href={`https://wa.me/?text=Hello%20Roopak%20Sir%2C%20I%20am%20interested%20in%20Think%20Without%20Ink%20Vedic%20Math%20Workshops`}
+                  href={`https://wa.me/919625190184?text=Hello%20Roopak%20Sir%2C%20I%20am%20interested%20in%20Think%20Without%20Ink%20Vedic%20Math%20Workshops`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold flex items-center gap-2 shadow-lg shadow-emerald-600/20 transition-all"
